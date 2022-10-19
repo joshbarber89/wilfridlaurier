@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>EC Spring Boot JSP example</title>
+</head>
+<body>
+	<h2>Grade</h2>
+	<a href="/grade/76">Test grade 76</a>
+	<h2>Rank</h2>
+	<a href="/rank/76">Test rank 76</a>
+	<h2>Grade & Rank</h2>
+	<a href="/grade_rank/76">Test grade & rank 76</a>
+	<h2>Predict Weka</h2>
+	<form method="POST" action="/prediction">
+		<input value="22,34,55,66,77,88" type="text" name="value"/>
+		<input type="submit" value="Submit Values"/>
+	</form>
+</body>
+</html>

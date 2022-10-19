@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action = "/stats-ejb-web/StatsJMSServlet" method = "GET">	  
+		 <input type = "hidden" name = "value" value="save"> <br>	   
+	     <input type = "submit" value = "Submit for Save Message"/>
+	</form>
+	<br/>
+	<br/>
+	<form action = "/stats-ejb-web/StatsJMSDataServlet" method = "GET">	  
+		 <input type = "text" name = "value" placeholder="0.0"> <br>	   
+	     <input type = "submit" value = "Submit to Send Value"/>
+	</form>
+</body>
+</html>

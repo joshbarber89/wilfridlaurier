@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>ec</groupId>
+    <artifactId>ec-a2</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  <groupId>ec</groupId>
+  <artifactId>stats-ejb-web</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ec jms client</name>
+  <description>maven preoject jms</description>
+    <dependencies>
+	    <!-- https://mvnrepository.com/artifact/org.jboss.spec.javax.jms/jboss-jms-api_2.0_spec -->
+	    <dependency>
+	        <groupId>org.jboss.spec.javax.jms</groupId>
+	        <artifactId>jboss-jms-api_2.0_spec</artifactId>
+	        <version>2.0.0.Final</version>
+	    </dependency>
+	    <!-- https://mvnrepository.com/artifact/org.wildfly/wildfly-client-all -->
+	    <dependency>
+	        <groupId>org.wildfly</groupId>
+	        <artifactId>wildfly-client-all</artifactId>
+	        <version>18.0.1.Final</version>
+	    </dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.activemq/artemis-jms-client -->
+		<dependency>
+		    <groupId>org.apache.activemq</groupId>
+		    <artifactId>artemis-jms-client</artifactId>
+		    <version>2.19.0</version>
+		</dependency>
+		<dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.10</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        
+        <dependency>
+        <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.8</version>
+        </dependency>
+         
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-xml_2.11.0-M4</artifactId>
+            <version>1.0-RC1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.22</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+	</dependencies>
+</project>
+

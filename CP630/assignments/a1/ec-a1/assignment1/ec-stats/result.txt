@@ -1,0 +1,30 @@
+Testsuite: ec.test.StatisticsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 sec
+------------- Standard Output ---------------
+Testing has Started
+
+getMax:5.0
+Testing Complete
+Testing has Started
+
+getMin:1.0
+Testing Complete
+Testing has Started
+
+getSTD:1.70293863659264
+Testing Complete
+Testing has Started
+
+getCount:5.0
+Testing Complete
+Testing has Started
+
+getMean:3.0
+Testing Complete
+------------- ---------------- ---------------
+
+Testcase: testMax took 0.003 sec
+Testcase: testMin took 0 sec
+Testcase: testSTD took 0 sec
+Testcase: testCount took 0 sec
+Testcase: testMean took 0 sec

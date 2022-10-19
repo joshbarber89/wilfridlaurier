@@ -1,0 +1,57 @@
+READ ME:
+
+Code written using mpi4py (had emailed professor on course website to receive permission beforehand - Khalil Choudhry)
+
+DEPENDENCEIES FOR RUNNING CODE:
+
+On the remote machines "pip install mpi4py" command errors and fails
+On the remote machines we do not have root permissions to install packages
+
+If you do not have this error and can install mpi4py then just install opencv-python and numpy via pip
+
+As such we need a workaround to install "pip install mpi4py"
+
+We do this via miniconda python
+
+https://docs.conda.io/en/latest/miniconda.html
+
+Grab miniconda for linux 64bit (.sh file). chmod +x on the file. 
+
+Run the script as your local user. You will get some prompts (eg asking for desired install directory)
+
+See install instructions here: https://docs.conda.io/en/latest/miniconda.html
+
+After following these instructions, relog.
+
+You may be put into conda venv automatically on relog. 
+Can "conda deactivate" to leave and "conda activate" to enter your venv.
+Can also edit bash_profile and bashrc dotfiles which have conda stuff from installer. 
+
+Inside conda venv run the following:
+conda install -c conda-forge openmpi=4.1.4=ha1ae619_100
+conda install -c conda-forge mpi4py
+pip install opencv-python
+# Should already have numpy but can pip install that if you do not
+
+
+For the OPTIONAL GUI, not needed if pass hidegui on command line:
+pip install PySimpleGUI
+
+OTHER DEPENDENCIES:
+If you can install mpi4py without conda, you can then just install opencv-python and numpy via pip
+
+
+ACTUALLY RUNNING THE CODE AND CHECKING OUTPUT:
+
+Run this command in directory of code, while in venv. If venv errors, try conda deactivate and then "conda activate" again
+
+mpiexec -np 4 python main.py both hideGUI 4x4
+
+This code will run both algorithms (cartesian and non cartesian). Can change "both"  to "2" for just cartesian and "1" for standard.
+
+Can also try 3x3 or 5x5 matrix. Or pass in your own matrix instead of default.
+
+OUTPUT:
+The images in the input folder are read, convolution is in output folder. Both folders in same directory as main.py
+As mentioned in report assumptions are made about number processes and images. Square images, image dims even divisble into num procs.
+integer Square root of num procs for 2nd algorithm. Etc. Refer to report.

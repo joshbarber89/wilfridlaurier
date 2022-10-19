@@ -1,0 +1,138 @@
+\hypertarget{classec_1_1_e_c_statistics}{}\section{ec.\+E\+C\+Statistics Class Reference}
+\label{classec_1_1_e_c_statistics}\index{ec.\+E\+C\+Statistics@{ec.\+E\+C\+Statistics}}
+Inheritance diagram for ec.\+E\+C\+Statistics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classec_1_1_e_c_statistics}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classec_1_1_e_c_statistics_a60feff78d1b3a0b548544d9cfbd6a051}{add\+Data} (double value)
+\begin{DoxyCompactList}\small\item\em Add data to statistics, which then calculates count, min, max, mean and stddev using incremental algorithms. \end{DoxyCompactList}\item 
+double \hyperlink{classec_1_1_e_c_statistics_abb7e2fa1c13cea018e3cf1e2a82309db}{get\+Count} ()
+\begin{DoxyCompactList}\small\item\em Retrieve count of data. \end{DoxyCompactList}\item 
+double \hyperlink{classec_1_1_e_c_statistics_a2e37a5bd92ed681173461776f562375e}{get\+Min} ()
+\begin{DoxyCompactList}\small\item\em Retrieve minimum value in data. \end{DoxyCompactList}\item 
+double \hyperlink{classec_1_1_e_c_statistics_a5585b02f584a18bef7a792b76710c225}{get\+Max} ()
+\begin{DoxyCompactList}\small\item\em Retrieve maximum value in data. \end{DoxyCompactList}\item 
+double \hyperlink{classec_1_1_e_c_statistics_a62f3366afb939bb372e1ec1fd5aec3bc}{get\+Mean} ()
+\begin{DoxyCompactList}\small\item\em Retrieve mean value in data. \end{DoxyCompactList}\item 
+double \hyperlink{classec_1_1_e_c_statistics_a62cb7d1e5f86a179c68cc8a9c450b835}{get\+S\+TD} ()
+\begin{DoxyCompactList}\small\item\em Retrieve standard deviation value in data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classec_1_1_e_c_statistics_a120060ecbd8161d900c74f713ef3df22}\label{classec_1_1_e_c_statistics_a120060ecbd8161d900c74f713ef3df22}} 
+void \hyperlink{classec_1_1_e_c_statistics_a120060ecbd8161d900c74f713ef3df22}{stats} ()
+\begin{DoxyCompactList}\small\item\em Compute and update the data, to make sure it is more precise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classec_1_1_e_c_statistics_a60feff78d1b3a0b548544d9cfbd6a051}\label{classec_1_1_e_c_statistics_a60feff78d1b3a0b548544d9cfbd6a051}} 
+\index{ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}!add\+Data@{add\+Data}}
+\index{add\+Data@{add\+Data}!ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}}
+\subsubsection{\texorpdfstring{add\+Data()}{addData()}}
+{\footnotesize\ttfamily void ec.\+E\+C\+Statistics.\+add\+Data (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Add data to statistics, which then calculates count, min, max, mean and stddev using incremental algorithms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfaceec_1_1_statistics_a8c59a234d776281dd7bd9fb05d0cb12e}{ec.\+Statistics}.
+
+\mbox{\Hypertarget{classec_1_1_e_c_statistics_abb7e2fa1c13cea018e3cf1e2a82309db}\label{classec_1_1_e_c_statistics_abb7e2fa1c13cea018e3cf1e2a82309db}} 
+\index{ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}}
+\subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
+{\footnotesize\ttfamily double ec.\+E\+C\+Statistics.\+get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieve count of data. 
+
+\begin{DoxyReturn}{Returns}
+double count 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceec_1_1_statistics_aa9a82f2a37f7f6563106075872bc7af2}{ec.\+Statistics}.
+
+\mbox{\Hypertarget{classec_1_1_e_c_statistics_a5585b02f584a18bef7a792b76710c225}\label{classec_1_1_e_c_statistics_a5585b02f584a18bef7a792b76710c225}} 
+\index{ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}!get\+Max@{get\+Max}}
+\index{get\+Max@{get\+Max}!ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}}
+\subsubsection{\texorpdfstring{get\+Max()}{getMax()}}
+{\footnotesize\ttfamily double ec.\+E\+C\+Statistics.\+get\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieve maximum value in data. 
+
+\begin{DoxyReturn}{Returns}
+double max 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceec_1_1_statistics_a1cf8e3f12f56957e4133ce4cd07277dc}{ec.\+Statistics}.
+
+\mbox{\Hypertarget{classec_1_1_e_c_statistics_a62f3366afb939bb372e1ec1fd5aec3bc}\label{classec_1_1_e_c_statistics_a62f3366afb939bb372e1ec1fd5aec3bc}} 
+\index{ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}!get\+Mean@{get\+Mean}}
+\index{get\+Mean@{get\+Mean}!ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}}
+\subsubsection{\texorpdfstring{get\+Mean()}{getMean()}}
+{\footnotesize\ttfamily double ec.\+E\+C\+Statistics.\+get\+Mean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieve mean value in data. 
+
+\begin{DoxyReturn}{Returns}
+double mean 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceec_1_1_statistics_aa25ad8afd473f6540041526226d946bd}{ec.\+Statistics}.
+
+\mbox{\Hypertarget{classec_1_1_e_c_statistics_a2e37a5bd92ed681173461776f562375e}\label{classec_1_1_e_c_statistics_a2e37a5bd92ed681173461776f562375e}} 
+\index{ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}!get\+Min@{get\+Min}}
+\index{get\+Min@{get\+Min}!ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}}
+\subsubsection{\texorpdfstring{get\+Min()}{getMin()}}
+{\footnotesize\ttfamily double ec.\+E\+C\+Statistics.\+get\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieve minimum value in data. 
+
+\begin{DoxyReturn}{Returns}
+double min 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceec_1_1_statistics_acee86eecccfe2d050c9a13a11f235d8d}{ec.\+Statistics}.
+
+\mbox{\Hypertarget{classec_1_1_e_c_statistics_a62cb7d1e5f86a179c68cc8a9c450b835}\label{classec_1_1_e_c_statistics_a62cb7d1e5f86a179c68cc8a9c450b835}} 
+\index{ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}!get\+S\+TD@{get\+S\+TD}}
+\index{get\+S\+TD@{get\+S\+TD}!ec\+::\+E\+C\+Statistics@{ec\+::\+E\+C\+Statistics}}
+\subsubsection{\texorpdfstring{get\+S\+T\+D()}{getSTD()}}
+{\footnotesize\ttfamily double ec.\+E\+C\+Statistics.\+get\+S\+TD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieve standard deviation value in data. 
+
+\begin{DoxyReturn}{Returns}
+double std 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceec_1_1_statistics_a51643b39410b478bc996068eeb48ca0d}{ec.\+Statistics}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/ec/E\+C\+Statistics.\+java\end{DoxyCompactItemize}

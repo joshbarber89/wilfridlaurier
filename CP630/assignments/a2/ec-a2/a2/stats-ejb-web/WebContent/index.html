@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Forms</title>
+</head>
+<body>
+	<h2>Singleton Action:</h2>
+	<form action = "/stats-ejb-web/StatsEJBSingletonServlet" method = "GET">
+		     Value: <input type = "text" name = "value"> <br>
+		     <input type = "submit" value = "Submit"/>
+	</form>
+	<h2>Stateful Action:</h2>
+	<form action = "/stats-ejb-web/StatsEJBStatefuleServlet" method = "GET">
+	     Value: <input type = "text" name = "value"> <br>
+	     <input type = "submit" value = "Submit"/>
+	</form>
+	<h2>Stateless Action:</h2>
+	<form action = "/stats-ejb-web/StatsEJBStatelessServlet" method = "GET">	     
+	     <input type = "submit" value = "Submit"/>
+	</form>
+</body>
+</html>
