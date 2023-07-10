@@ -60,6 +60,16 @@ public class TestToolbarTest {
                         isDisplayed()));
         materialButton2.perform(click());
 
+        ViewInteraction floatingActionButton = onView(
+                allOf(withId(R.id.fab),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                1),
+                        isDisplayed()));
+        floatingActionButton.perform(click());
+
         ViewInteraction actionMenuItemView = onView(
                 allOf(withId(R.id.action_one), withContentDescription("Choose One"),
                         childAtPosition(
@@ -69,26 +79,6 @@ public class TestToolbarTest {
                                 0),
                         isDisplayed()));
         actionMenuItemView.perform(click());
-
-        ViewInteraction overflowMenuButton = onView(
-                allOf(withContentDescription("More options"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(R.id.toolbar),
-                                        1),
-                                3),
-                        isDisplayed()));
-        overflowMenuButton.perform(click());
-
-        ViewInteraction materialTextView = onView(
-                allOf(withId(androidx.core.R.id.title), withText("About"),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(androidx.appcompat.R.id.content),
-                                        0),
-                                0),
-                        isDisplayed()));
-        materialTextView.perform(click());
 
         ViewInteraction actionMenuItemView2 = onView(
                 allOf(withId(R.id.action_three), withContentDescription("Choose Three"),
@@ -118,6 +108,45 @@ public class TestToolbarTest {
                                         0),
                                 3)));
         materialButton3.perform(scrollTo(), click());
+
+        ViewInteraction overflowMenuButton = onView(
+                allOf(withContentDescription("More options"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(R.id.toolbar),
+                                        1),
+                                3),
+                        isDisplayed()));
+        overflowMenuButton.perform(click());
+
+        ViewInteraction materialTextView = onView(
+                allOf(withId(androidx.core.R.id.title), withText("About"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(androidx.appcompat.R.id.content),
+                                        0),
+                                0),
+                        isDisplayed()));
+        materialTextView.perform(click());
+
+        ViewInteraction actionMenuItemView3 = onView(
+                allOf(withId(R.id.action_two), withContentDescription("Choose Two"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(R.id.toolbar),
+                                        1),
+                                1),
+                        isDisplayed()));
+        actionMenuItemView3.perform(click());
+
+        ViewInteraction materialButton4 = onView(
+                allOf(withId(android.R.id.button1), withText("Okay"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withClassName(is("android.widget.ScrollView")),
+                                        0),
+                                3)));
+        materialButton4.perform(scrollTo(), click());
     }
 
     private static Matcher<View> childAtPosition(
