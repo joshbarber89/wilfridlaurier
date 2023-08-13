@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mission 2</string>
+    <string name="hello_message">Bonjour le monde!</string>
+    <string name="ButtonText">Je suis un bouton</string>
+    <string name="login">Connexion</string>
+    <string name="login_name">identifiant</string>
+    <string name="password">mot de passe</string>
+    <string name="radio_button">BoutonRadio</string>
+    <string name="check_box">Case à Cocher</string>
+    <string name="switcher">Qu\'est-ce que cela fait?</string>
+    <string name="dialog_message">avez-vous terminé?</string>
+    <string name="dialog_title">Question</string>
+    <string name="ok">d\'accord</string>
+    <string name="cancel">Annuler</string>
+    <string name="switch_is_on">l\'interrupteur est allumé</string>
+    <string name="switch_is_off">l\'interrupteur est éteint</string>
+    <string name="here_is_my_response">voici ma réponse</string>
+    <string name="start_chat">Démarrer la discussion</string>
+    <string name="send">envoyer</string>
+    <string name="test_toolbar">Test Toolbar</string>
+    <string name="about">à propos</string>
+    <string name="choose_one">choisissez-en un</string>
+    <string name="choose_two">choisissez deux</string>
+    <string name="choose_three">choisissez trois</string>
+    <string name="go_back">Voulez-vous revenir en arrière?</string>
+    <string name="title_activity_test_toolbar">Title</string>
+    <string name="weather">Weather</string>
+    <string name="cur_temp">Température actuelle</string>
+    <string name="min_temp">température minimale</string>
+    <string name="max_temp">température maximale</string>
+    <string-array name="cities">
+        <item>Toronto</item>
+        <item>Ottawa</item>
+        <item>Vancouver</item>
+        <item>Montreal</item>
+    </string-array>
+</resources>

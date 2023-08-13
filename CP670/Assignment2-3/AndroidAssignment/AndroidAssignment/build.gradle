@@ -1,0 +1,46 @@
+buildscript {
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'org.jacoco:org.jacoco.core:0.8.5'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.0.1' apply false
+    id 'com.android.library' version '8.0.1' apply false
+}
+
+task jacocoTestReport(type: JacocoReport,
+        dependsOn: ['testDebugUnitTest',
+                    'createDebugCoverageReport']) {
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+
+    reports {
+        xml.required = false
+        html.required = true
+    }
+
+    def fileFilter = ['androidx/**/*.*',
+                      '**/view/*.*',
+                      '**/data/*.*',
+                      '**/data/model/*.*',
+                      '**/generated/callback/*.*',
+                      '**/lambda$*.class',
+                      '**/lambda.class',
+                      '**/*lambda.class',
+                      '**/*lambda*.class']
+
+    def debugTree = fileTree(dir:
+            "${buildDir}/intermediates/javac/debug/classes",
+            excludes: fileFilter
+    )
+
+    def mainSrc = "/src/main/java"
+
+    sourceDirectories.from(files([mainSrc]))
+
+    classDirectories.from(files([debugTree]))
+    executionData.from(fileTree(dir: "${buildDir}", includes:[
+            "/jacoco/testDebugUnitTest.exec"]))
+}

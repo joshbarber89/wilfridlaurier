@@ -1,0 +1,15 @@
+7
+a,b
+a,c
+a,f
+b,c
+b,f
+c,f
+c,d
+b,e
+b,d
+e,d
+z,a
+z,b
+z,c
+z,f

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mission 2</string>
+    <string name="hello_message">Bonjour le monde!</string>
+    <string name="ButtonText">Je suis un bouton</string>
+    <string name="login">Connexion</string>
+    <string name="login_name">identifiant</string>
+    <string name="password">mot de passe</string>
+    <string name="radio_button">BoutonRadio</string>
+    <string name="check_box">Case à Cocher</string>
+    <string name="switcher">Qu\'est-ce que cela fait?</string>
+    <string name="dialog_message">avez-vous terminé?</string>
+    <string name="dialog_title">Question</string>
+    <string name="ok">d\'accord</string>
+    <string name="cancel">Annuler</string>
+    <string name="switch_is_on">l\'interrupteur est allumé</string>
+    <string name="switch_is_off">l\'interrupteur est éteint</string>
+    <string name="here_is_my_response">voici ma réponse</string>
+    <string name="start_chat">Démarrer la discussion</string>
+    <string name="send">envoyer</string>
+</resources>

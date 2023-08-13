@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Assignment 2</string>
+    <string name="hello_message">Hello World!</string>
+    <string name="ButtonText">I\'m a button</string>
+    <string name="login">Login</string>
+    <string name="login_name">login name</string>
+    <string name="password">password</string>
+    <string name="radio_button">RadioButton</string>
+    <string name="check_box">CheckBox</string>
+    <string name="switcher">What does this do?</string>
+    <string name="dialog_message">Are you finished?</string>
+    <string name="dialog_title">Question</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="switch_is_on">Switch Is On</string>
+    <string name="switch_is_off">Switch Is Off</string>
+    <string name="here_is_my_response">Here is my response</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="send">Send</string>
+    <string name="test_toolbar">Test Toolbar</string>
+    <string name="about">About</string>
+    <string name="choose_one">Choose One</string>
+    <string name="choose_two">Choose Two</string>
+    <string name="choose_three">Choose Three</string>
+    <string name="go_back">Do you want to go back?</string>
+    <string name="title_activity_test_toolbar">Title</string>
+    <string name="weather">Weather</string>
+    <string name="cur_temp">Current Temp</string>
+    <string name="min_temp">Minimum Temp</string>
+    <string name="max_temp">Maximum Temp</string>
+    <string-array name="cities">
+        <item>Toronto</item>
+        <item>Ottawa</item>
+        <item>Vancouver</item>
+        <item>Montreal</item>
+    </string-array>
+</resources>

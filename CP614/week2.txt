@@ -1,0 +1,26 @@
+Vigenère is polyalphabetic (for example, gets encrypted to V in the word ”COFFEE” but is encrypted to H in ”NECESSARY”). This means a plaintext letter can be encrypted to more than one ciphertext letter. The cryptosystems we studied previously were monoalphabetic.
+An exhaustive key search is practical by computer but infeasible by hand (there are 26^m possible keywords of length). It is still possible to break Vigenère by hand, however (and we will discuss next how to do it). In general, polyalphabetic ciphers are harder to break than monoalphabetic.
+
+Vigenere cipher uses a key that then bumps each letter in the plaintext by the letter position of the key and spits out the letter in the new alpha index. Example:
+
+Key = tea
+
+Plaintext: COFFEEISNECESSARY
+
+key length is extended to match length of key: teateateateateate
+
+after encryption: VSFYIEBWNXGELWAKC
+
+Kasiski Test is used to help decrypt the length of a Vigenere cipher
+
+It tracks the occurance of strings of length of 3 and measures the distances between them. If the distances between them are 42, 140, 98, then the gcd of the numbers is 14 (14 is the common denominator in all of them). thus the key length must be 14, 7, 2, 1
+
+Index of Coincidence: The index of coincidence measures the probability that two letters chosen at random from a text are the same letter. 
+
+DES: is an acronym that stands for Data Encryption Standard. Easier to learn simplified DES. Not secure, as simplified DES has 2^10 = 1024 possibilities. It encrypts 8 bit blocks of plaintext to produce 8-bit blocks of ciphertext and uses a 10-bit key. It involves 5 functions,
+
+plaintext => IP => II => O (big theta) => II => IP^-1 => ciphertext
+
+IP is a permutation, II is a complicated function that involces permutations and substituions and depends on the key. O (big thata) a simple permutation that switches the two halves of text. II again but with different input key. and IP^-1 the inverse of the original permutation. 
+
+S-box:  An S-box is a lookup table that is embedded in a cryptosystem. In contrast to many of the other operations, such as permutations, swaps, or other reorderings, of modern cryptosystems, the S-box can provide nonlinearity, i.e., the outcome is not dependent on a formula you can write down. This makes the composition of the S-boxes quite important. What is a good way to generate them? How can one be sure they are secure enough? The answers to these questions are beyond the scope of this course, but these are important points to keep in mind. The engineering of S-boxes is also a target of scrutiny for the possibility that there is a trapdoor buried inside them that would provide a secret shortcut to deciphering the message. The fact that there are no simple equations defining them leads the skeptic to wonder if this provides a good means of concealing such a trapdoor.
