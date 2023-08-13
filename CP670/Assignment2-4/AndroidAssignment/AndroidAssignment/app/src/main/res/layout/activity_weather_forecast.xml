@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="2">
+    <ProgressBar
+        android:id="@+id/activityWeatherForecastProgressBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal">
+    </ProgressBar>
+    <Spinner
+        android:id="@+id/activityWeatherSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activityWeatherForecastProgressBar"/>
+    <ImageView
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:id="@+id/activityWeatherForecastImageView"
+        android:text="@string/radio_button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="weather description"
+        android:layout_below="@id/activityWeatherSpinner">
+    </ImageView>
+    <TextView
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:id="@+id/activityWeatherForecastTextViewMinTemp"
+        android:text="@string/min_temp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/activityWeatherForecastImageView">
+    </TextView>
+    <TextView
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:id="@+id/activityWeatherForecastTextViewMaxTemp"
+        android:text="@string/max_temp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/activityWeatherForecastTextViewMinTemp">
+    </TextView>
+    <TextView
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:id="@+id/activityWeatherForecastTextViewCurTemp"
+        android:text="@string/cur_temp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/activityWeatherForecastTextViewMaxTemp">
+    </TextView>
+
+</RelativeLayout>
+

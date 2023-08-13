@@ -1,0 +1,17 @@
+10
+q,r
+s,q
+s,r
+s,t
+t,r
+u,s
+u,t
+u,w
+v,u
+v,t
+w,v
+w,x
+x,v
+x,y
+x,z
+z,y

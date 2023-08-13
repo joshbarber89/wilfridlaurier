@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar">
+    <item android:id="@+id/action_one"
+        android:title="@string/choose_one"
+        android:icon="@drawable/icons8_army_knife_24"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_two"
+        android:title="@string/choose_two"
+        android:icon="@drawable/icons8_cannon_24"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_three"
+        android:title="@string/choose_three"
+        android:icon="@drawable/icons8_gatling_gun_24"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_about"
+        android:title="@string/about"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+</menu>

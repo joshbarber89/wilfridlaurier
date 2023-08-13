@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_one"
+        android:title="Choose One"
+        android:icon="@drawable/add"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_two"
+        android:title="Choose two"
+        android:icon="@drawable/add"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_three"
+        android:title="Choose Three"
+        android:icon="@drawable/add"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+</menu>

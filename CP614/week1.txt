@@ -1,0 +1,70 @@
+cryptography gives:
+
+confidentiality - keeping secrets secret
+integrity - the message is whole and unchanged. Nothing has been changed, added or deleted
+availability - no denial of service, available when we want it
+access control - cryptography ensures acces from on approved users
+authenticity - the message is guranteed to be authentic
+nonrepudiation - digital signature, logs user activity to the message, whether they modify the message
+
+Alice ius reference to the message sender
+Bob is the message receiver
+Oscar or Eve are the people eavesdropping on the message being sent
+
+plaintext is the information sent
+ciphertext is the inforamtion in encrupted form
+cryptanalysis is the process of attempting to break the cryptosystem i.e. determine either the key or the plaintext
+
+what converts the plaintext to ciphertext is called a cryptosystem. A cryptosystem has an encryption rule ek. There also exsists a decryption rule
+
+Four basic levels of attack
+
+ciphertext only: the opponent has only a string of ciphertext
+known plaintext: the opponent has a string of plaintext and the ciphertext that corresponds to it
+chosen plaintext: the opponent has a string of plaintext of his or her choice and the ciphertext that corresponds to it
+chosen cuphertext: the opponent can choose a string of ciphertext and has access to plaintext that corresponds to it,
+
+Shift Cipher
+
+An example of shift cipher is to use values say of the alphabit and shift there order values by 10 and mod it by 26 (all the letters in the alphabet) and using say a k value of 4
+So if A = 0, B = 1, C = 2, then shift by 10 so A = 10, B = 11, C = 12 then use k = 4 in the d(y) = (y - k) mod 26
+
+COFFEEISNECESARY will then equal GSJJIIMWRIGIWWEVC
+
+This is one of the least secure ciphers
+
+Substitution Cipher
+
+For substitution cipher we choose any mapping from a letter of the alphabet to another letter of the alphabet.
+
+e = (ax + b ) mod 26
+d = (a^-1(y-b)) mod 26
+
+If a = 21 and b = 3 encrypt HAWKS answer is UDXFR
+
+The One-Time Pad
+It is uncondiotnal secure. Impossible to decrypt.
+It is a truly random sequence of bits the same length as the plaintext
+Its hardly used because key management distribution is a nightmare
+
+Pseudorandomness
+
+Sequences of numbers are generated, usually by a timestamp. True random from a computer isn't really ever random. If the seed is a timestamp, as long as the attacker knows the timestamp, the cipher will be easy to decipher.
+For a sequence to be considered truly random the sequence of numbers must be:
+
+independence: an individual bit does not influence the value of any other bit
+uniformity: a 0 or 1 is equally likely to appear in the sequence
+scalability: any subsequence of the sequence should display thje same properties of randomness, and any test applied to the sequence has to be applicable to any subsequence
+consistency: the algorithm shouyld behave independently of the seed
+unpredictability: both forward and backwar: knowledge of one part of the sequence should not give knowledge of another
+frequency test: this determines the proportion of 1s and 0's in the sequence. It should be close to 50-50
+runs test: this determines the presence of "runs" or uninterrupted subsequences of identical bits. The objective is to compare the length and frequency of runs to that we would expect to find in a truly random sequence.
+Maurer's universal statistical test: this looks at the number of bits between matching patterns. Can the sequence be significantly compressed without loss of informtation - if so, that;s bad as it is an indication the sequence is not very random.
+serial test: this test looks at all possible m-bit patterns and copmpares their frequency with that you would expect in a truly random sequence
+cumulative sums test: this looks at the cumulative sums of the partial swequences as compared to the expected cumulative sums in a truly random sequence
+
+One algorithm that passes all the tests is the Blumb-Blum-Shub algorithm
+
+
+
+
